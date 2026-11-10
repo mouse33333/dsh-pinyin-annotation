@@ -1,6 +1,6 @@
 {
   "name": "dsh-pinyin-annotation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pinyin annotation skill pack for DeepSeek Harness: GB/T 16159-2012 orthography + HSK classroom conventions, producing tone-marked, word-segmented, half-width-punctuated pinyin that is safe to hand to learners. / 国际中文拼音标注技能包：按 GB/T 16159-2012 正词法与 HSK 教学体例输出逐字带调、分词连写、专名大写、半角标点的拼音，可直接交给外国学生。",
   "type": "module",
   "main": "index.js",

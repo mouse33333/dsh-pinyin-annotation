@@ -10,6 +10,7 @@
 > 可执行的规则和分布检查清单，模型匹配后按同一口径产出。
 
 [![MIT License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![npm](https://img.shields.io/npm/v/dsh-pinyin-annotation)](https://www.npmjs.com/package/dsh-pinyin-annotation)
 [![dsh](https://img.shields.io/badge/DeepSeek%20Harness-dsh--plugin-4176E6)](https://github.com/deepseek-ai/deepseek-harness)
 
 ## 做什么
@@ -43,10 +44,16 @@
 
 ## 安装
 
-直接从 GitHub 安装：
+从 npm：
 
 ```bash
-dsh plugin --profile desktop add "git+https://github.com/mouse33333/dsh-pinyin-annotation.git#v1.0.1"
+dsh plugin --profile desktop add dsh-pinyin-annotation
+```
+
+或从 GitHub 的 tag：
+
+```bash
+dsh plugin --profile desktop add "git+https://github.com/mouse33333/dsh-pinyin-annotation.git#v1.0.2"
 ```
 
 从本地目录：
@@ -54,9 +61,6 @@ dsh plugin --profile desktop add "git+https://github.com/mouse33333/dsh-pinyin-a
 ```bash
 dsh plugin --profile desktop add /path/to/dsh-pinyin-annotation
 ```
-
-本包尚未发布到 npm。发布之后最短的装法是：
-`dsh plugin --profile desktop add dsh-pinyin-annotation`。
 
 本包向 profile 的 `cordis.patch.yml` 插入一个 host 插件（`dsh-pinyin-annotation`）。
 不需要别的配置——基础包已经挂好了它要注册进去的技能注册表。

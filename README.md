@@ -16,6 +16,7 @@ DeepSeek Harness 拼音标注技能包 —— 面向国际中文教学的拼音�
 > classroom conventions into executable rules and a pre-delivery checklist.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![npm](https://img.shields.io/npm/v/dsh-pinyin-annotation)](https://www.npmjs.com/package/dsh-pinyin-annotation)
 [![dsh](https://img.shields.io/badge/DeepSeek%20Harness-dsh--plugin-4176E6)](https://github.com/deepseek-ai/deepseek-harness)
 
 English | [中文](README.zh.md)
@@ -53,10 +54,16 @@ Four reference notes ship beside it and are loaded on demand, so the main
 
 ## Install / 安装
 
-Straight from GitHub / 直接从 GitHub 装：
+From npm / 从 npm：
 
 ```bash
-dsh plugin --profile desktop add "git+https://github.com/mouse33333/dsh-pinyin-annotation.git#v1.0.1"
+dsh plugin --profile desktop add dsh-pinyin-annotation
+```
+
+Or from the GitHub tag / 或从 GitHub 的 tag：
+
+```bash
+dsh plugin --profile desktop add "git+https://github.com/mouse33333/dsh-pinyin-annotation.git#v1.0.2"
 ```
 
 From a local checkout / 从本地目录：
@@ -64,10 +71,6 @@ From a local checkout / 从本地目录：
 ```bash
 dsh plugin --profile desktop add /path/to/dsh-pinyin-annotation
 ```
-
-Not on npm yet. Once it is published, this becomes the shortest form:
-`dsh plugin --profile desktop add dsh-pinyin-annotation`.
-（尚未发布到 npm；发布后即以此行安装。）
 
 The bundle inserts one host plugin (`dsh-pinyin-annotation`) into the profile's
 `cordis.patch.yml`. It needs nothing else — the base bundle already mounts the
