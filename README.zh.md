@@ -43,10 +43,10 @@
 
 ## 安装
 
-从 npm：
+直接从 GitHub 安装：
 
 ```bash
-dsh plugin --profile desktop add dsh-pinyin-annotation
+dsh plugin --profile desktop add "git+https://github.com/mouse33333/dsh-pinyin-annotation.git#v1.0.0"
 ```
 
 从本地目录：
@@ -54,6 +54,9 @@ dsh plugin --profile desktop add dsh-pinyin-annotation
 ```bash
 dsh plugin --profile desktop add /path/to/dsh-pinyin-annotation
 ```
+
+本包尚未发布到 npm。发布之后最短的装法是：
+`dsh plugin --profile desktop add dsh-pinyin-annotation`。
 
 本包向 profile 的 `cordis.patch.yml` 插入一个 host 插件（`dsh-pinyin-annotation`）。
 不需要别的配置——基础包已经挂好了它要注册进去的技能注册表。
