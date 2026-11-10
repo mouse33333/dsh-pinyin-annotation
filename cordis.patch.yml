@@ -1,0 +1,8 @@
+# dsh-pinyin-annotation bundle: publishes every skills/<name>/SKILL.md shipped
+# in this package on ctx.skills, so the pinyin-annotation skill travels with the
+# profile instead of having to be copied into a skills directory by hand.
+# Applied after @deepseek-ai/dsh-base, which already mounts the skill registry
+# and the model-facing skill loader.
+- insert:
+    - id: dsh-pinyin-annotation
+      name: dsh-pinyin-annotation

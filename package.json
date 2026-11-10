@@ -1,0 +1,43 @@
+{
+  "name": "dsh-pinyin-annotation",
+  "version": "1.0.0",
+  "description": "Pinyin annotation skill pack for DeepSeek Harness: GB/T 16159-2012 orthography + HSK classroom conventions, producing tone-marked, word-segmented, half-width-punctuated pinyin that is safe to hand to learners. / 国际中文拼音标注技能包：按 GB/T 16159-2012 正词法与 HSK 教学体例输出逐字带调、分词连写、专名大写、半角标点的拼音，可直接交给外国学生。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skills",
+    "icon.png",
+    "README.md",
+    "README.zh.md"
+  ],
+  "icon": "icon.png",
+  "license": "MIT",
+  "author": "Arthur333",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mouse33333/dsh-pinyin-annotation.git"
+  },
+  "homepage": "https://github.com/mouse33333/dsh-pinyin-annotation#readme",
+  "bugs": {
+    "url": "https://github.com/mouse33333/dsh-pinyin-annotation/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "pinyin",
+    "chinese-teaching",
+    "hsk",
+    "skill"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

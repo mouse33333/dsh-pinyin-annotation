@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+# Pictures stay byte-exact.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+
+# Source and prose are normalised to LF so a Windows checkout matches the repo.
+*.md   text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
