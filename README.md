@@ -56,7 +56,7 @@ Four reference notes ship beside it and are loaded on demand, so the main
 Straight from GitHub / 直接从 GitHub 装：
 
 ```bash
-dsh plugin --profile desktop add "git+https://github.com/mouse33333/dsh-pinyin-annotation.git#v1.0.0"
+dsh plugin --profile desktop add "git+https://github.com/mouse33333/dsh-pinyin-annotation.git#v1.0.1"
 ```
 
 From a local checkout / 从本地目录：

@@ -46,7 +46,7 @@
 直接从 GitHub 安装：
 
 ```bash
-dsh plugin --profile desktop add "git+https://github.com/mouse33333/dsh-pinyin-annotation.git#v1.0.0"
+dsh plugin --profile desktop add "git+https://github.com/mouse33333/dsh-pinyin-annotation.git#v1.0.1"
 ```
 
 从本地目录：
